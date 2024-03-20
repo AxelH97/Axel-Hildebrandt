@@ -32,6 +32,7 @@ h1,
 h2 {
   text-align: center;
   text-decoration: underline;
+  font-size: xx-large;
 }
 
 #image {
@@ -51,6 +52,11 @@ h2 {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+#about-me-content {
+  font-size: x-large;
+  margin: 2%;
 }
 
 .project {
