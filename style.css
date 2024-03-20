@@ -1,13 +1,13 @@
 body {
-  background-color: grey;
+  background-image: url(./images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
+  background-size: cover;
+  padding: 3%;
 }
 
 #navbar {
-  padding: 10px;
-  background-color: #f4f4f4;
-  border-bottom: 1px solid #ccc;
-  width: 15%;
   position: fixed;
+  top: 0;
+  font-size: x-large;
 }
 
 #navlist {
@@ -32,11 +32,11 @@ h1,
 h2 {
   text-align: center;
   text-decoration: underline;
-  font-size: xx-large;
+  font-size: 500%;
 }
 
 #image {
-  max-width: 10%;
+  width: 20%;
   height: auto;
 }
 
@@ -50,12 +50,10 @@ h2 {
 #about-me {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 #about-me-content {
-  font-size: x-large;
+  font-size: xx-large;
   margin: 2%;
 }
 
@@ -70,7 +68,7 @@ h2 {
 }
 
 .project:hover {
-  opacity: 0.7; /* Hintergrund verblasst */
+  opacity: 0.7;
 }
 
 .project h3,
@@ -114,4 +112,12 @@ h2 {
 .hobbies-list p:hover {
   transform: scale(1.5);
   color: gold;
+}
+
+footer {
+  text-align: center;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-top: 45%;
 }
