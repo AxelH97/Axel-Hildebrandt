@@ -1,3 +1,7 @@
+body {
+  background-color: grey;
+}
+
 #navbar {
   padding: 10px;
   background-color: #f4f4f4;
@@ -91,99 +95,14 @@ h2 {
 .hobbies-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "p1 p2 p3 p4 p5"
-    "p6 p7 p8 p9 p10"
-    "p11 p12 p13 p14 p15"
-    "p16 p17 p18 p19 p20";
+  grid-template-rows: repeat(5, 1fr);
   margin: 0 100px;
-}
-
-.hobbies p:nth-child(1) {
-  grid-area: p1;
-}
-
-.hobbies p:nth-child(2) {
-  grid-area: p2;
-}
-
-.hobbies p:nth-child(3) {
-  grid-area: p3;
-}
-
-.hobbies p:nth-child(4) {
-  grid-area: p4;
-}
-
-.hobbies p:nth-child(5) {
-  grid-area: p5;
-}
-
-.hobbies p:nth-child(6) {
-  grid-area: p6;
-}
-
-.hobbies p:nth-child(7) {
-  grid-area: p7;
-}
-
-.hobbies p:nth-child(8) {
-  grid-area: p8;
-}
-
-.hobbies p:nth-child(9) {
-  grid-area: p9;
-}
-
-.hobbies p:nth-child(10) {
-  grid-area: p10;
-}
-
-.hobbies p:nth-child(11) {
-  grid-area: p11;
-}
-
-.hobbies p:nth-child(12) {
-  grid-area: p12;
-}
-
-.hobbies p:nth-child(13) {
-  grid-area: p13;
-}
-
-.hobbies p:nth-child(14) {
-  grid-area: p14;
-}
-
-.hobbies p:nth-child(15) {
-  grid-area: p15;
-}
-
-.hobbies p:nth-child(16) {
-  grid-area: p16;
-}
-
-.hobbies p:nth-child(17) {
-  grid-area: p17;
-}
-
-.hobbies p:nth-child(18) {
-  grid-area: p18;
-}
-
-.hobbies p:nth-child(19) {
-  grid-area: p19;
-}
-
-.hobbies p:nth-child(20) {
-  grid-area: p20;
 }
 
 .hobbies-list p {
   color: rgb(233, 233, 233);
   transition: transform 3s ease;
-  font-size: 20px;
+  font-size: 250%;
 }
 
 .hobbies-list p:hover {
