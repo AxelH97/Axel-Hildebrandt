@@ -50,12 +50,38 @@ h2 {
 }
 
 .project {
+  position: relative;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
-  height: 500%;
+  background-position: center;
+  background-size: cover;
+  height: 5000%;
 }
 
+.project:hover {
+  opacity: 0.7; /* Hintergrund verblasst */
+}
+
+.project h3,
+.project a {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 600%;
+  font-weight: bold;
+}
+
+.project:hover h3,
+.project:hover a {
+  opacity: 1;
+}
+
+.project a {
+  top: 60%;
+}
 #projects-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

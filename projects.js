@@ -14,7 +14,7 @@ const projekte = [
   {
     name: "altes Portfolio",
     url: "https://axelh97.github.io/Abschlussprojekt-html-css-Portfolio/",
-    backgroundImage: "url('images/portfolio.png')",
+    backgroundImage: "url('images/portfolio1.png')",
   },
 ];
 
@@ -22,12 +22,26 @@ projekte.forEach((project) => {
   const projectElement = document.createElement("div");
   projectElement.classList.add("project");
   projectElement.style.backgroundImage = project.backgroundImage;
-  projectElement.style.backgroundSize = "cover";
-  projectElement.style.backgroundPosition = "center";
 
-  projectElement.innerHTML = `
-      <h3>${project.name}</h3>
-      <a href="${project.url}" target="_blank">Ansehen</a>
-    `;
+  const nameElement = document.createElement("h3");
+  nameElement.textContent = project.name;
+
+  const linkElement = document.createElement("a");
+  linkElement.href = project.url;
+  linkElement.target = "_blank";
+  linkElement.textContent = "Ansehen";
+
+  projectElement.addEventListener("mouseenter", () => {
+    nameElement.style.opacity = "1";
+    linkElement.style.opacity = "1";
+  });
+
+  projectElement.addEventListener("mouseleave", () => {
+    nameElement.style.opacity = "0";
+    linkElement.style.opacity = "0";
+  });
+
+  projectElement.appendChild(nameElement);
+  projectElement.appendChild(linkElement);
   projectsList.appendChild(projectElement);
 });
