@@ -31,16 +31,6 @@ projekte.forEach((project) => {
   linkElement.target = "_blank";
   linkElement.textContent = "Ansehen";
 
-  projectElement.addEventListener("mouseenter", () => {
-    nameElement.style.opacity = "1";
-    linkElement.style.opacity = "1";
-  });
-
-  projectElement.addEventListener("mouseleave", () => {
-    nameElement.style.opacity = "0";
-    linkElement.style.opacity = "0";
-  });
-
   projectElement.appendChild(nameElement);
   projectElement.appendChild(linkElement);
   projectsList.appendChild(projectElement);
