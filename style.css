@@ -36,7 +36,7 @@ h2 {
 }
 
 #image {
-  width: 30vw;
+  width: 20vw;
   height: auto;
 }
 
@@ -53,7 +53,7 @@ h2 {
 }
 
 #about-me-content {
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: 2vh 0;
 }
 
@@ -68,7 +68,7 @@ h2 {
 }
 
 .project:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .project h3,
@@ -77,7 +77,7 @@ h2 {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
+
   font-size: 4vw;
   font-weight: bold;
 }
