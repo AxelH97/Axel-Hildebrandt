@@ -1,7 +1,6 @@
 body {
   background-image: url(./images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
   background-size: cover;
-  padding: 1%;
 }
 
 #navbar {
@@ -16,7 +15,7 @@ body {
 }
 
 #navlist li {
-  margin: 0 2vw;
+  margin: 0 1vw;
 }
 
 a {
@@ -25,31 +24,42 @@ a {
 }
 
 a:hover {
-  color: #f00;
+  color: red;
 }
 
 h1,
 h2 {
   text-align: center;
   text-decoration: underline;
+}
+
+h1 {
   font-size: 4vw;
+  padding-top: 2vh;
+}
+
+h2 {
+  font-size: 3vw;
+  padding-top: 12vh;
+  padding-bottom: 3vh;
 }
 
 #image {
   width: 20vw;
   height: auto;
-}
 
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2vh 0;
+  padding-right: 3vw;
 }
 
 #about-me {
+  display: flex;
+  justify-content: center;
   margin: 2vh 2vw;
   padding: 2vh 2vw;
+}
+
+#about-me a {
+  margin: 0.5vw;
 }
 
 #about-me-content {
@@ -65,11 +75,11 @@ h2 {
   background-position: center;
   background-size: cover;
   height: 35vw;
-  overflow: hidden; /* Overflow verstecken */
+  overflow: hidden;
 }
 
 .project:hover {
-  transform: translateY(-10px); /* Bewegung nach oben */
+  transform: translateY(-10px);
 }
 
 .project::after {
@@ -146,4 +156,10 @@ footer {
   border: 1px solid #ccc;
   width: 100%;
   margin-top: 5vh;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    padding: 1vh;
+  }
 }
