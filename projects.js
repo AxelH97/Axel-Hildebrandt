@@ -35,3 +35,11 @@ projekte.forEach((project) => {
   projectElement.appendChild(linkElement);
   projectsList.appendChild(projectElement);
 });
+
+const githubButton = document.createElement("a");
+githubButton.href = "https://github.com/axelh97";
+githubButton.target = "_blank";
+githubButton.textContent = "Mein GitHub-Profil";
+githubButton.classList.add("github-button");
+
+projectsList.parentNode.insertBefore(githubButton, projectsList.nextSibling);
