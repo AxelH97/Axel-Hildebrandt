@@ -1,6 +1,8 @@
 body {
   background-image: url(./images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 #navbar {
@@ -40,14 +42,13 @@ h1 {
 
 h2 {
   font-size: 3vw;
-  padding-top: 12vh;
+  padding-top: 1vh;
   padding-bottom: 3vh;
 }
 
 #image {
   width: 20vw;
   height: auto;
-
   padding-right: 3vw;
 }
 
@@ -161,5 +162,8 @@ footer {
 @media screen and (max-width: 768px) {
   h2 {
     padding: 1vh;
+  }
+  #navbar {
+    display: none;
   }
 }
