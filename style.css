@@ -1,8 +1,6 @@
 body {
-  background-image: url(./images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
+  background-image: url(./images/vintage-smooth-textured-paper-background.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 #navbar {
@@ -22,7 +20,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: lightgrey;
 }
 
 a:hover {
@@ -42,7 +40,7 @@ h1 {
 
 h2 {
   font-size: 3vw;
-  padding-top: 1vh;
+  padding-top: 12vh;
   padding-bottom: 3vh;
 }
 
@@ -64,10 +62,31 @@ h2 {
 }
 
 #about-me-content {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   margin: 2vh 0;
 }
 
+#about-me-content p {
+  color: lightgrey;
+}
+
+.hobbies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+  gap: 5vw;
+  margin: 0 5vw;
+}
+
+.hobbies-list p {
+  color: rgb(233, 233, 233);
+  transition: transform 3s ease;
+  font-size: 1vw;
+}
+
+.hobbies-list p:hover {
+  transform: scale(2);
+  color: gold;
+}
 .project {
   position: relative;
   border: 1px solid #ccc;
@@ -133,29 +152,11 @@ h2 {
   gap: 2vw;
 }
 
-.hobbies-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
-  gap: 5vw;
-  margin: 0 5vw;
-}
-
-.hobbies-list p {
-  color: rgb(233, 233, 233);
-  transition: transform 3s ease;
-  font-size: 1vw;
-}
-
-.hobbies-list p:hover {
-  transform: scale(2);
-  color: gold;
-}
-
 .github-button {
   display: flex;
   justify-content: center;
-  padding: 2vh 0;
-  font-size: 2vh;
+  padding-top: 2vh;
+  font-size: 4vh;
 }
 
 footer {
@@ -163,12 +164,13 @@ footer {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   width: 100%;
-  margin-top: 5vh;
+  font-size: 1.5vh;
+  margin-top: 2vh;
 }
 
 @media screen and (max-width: 768px) {
   h2 {
-    padding: 1vh;
+    padding: 2vh;
   }
   #navbar {
     display: none;
